@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(40, 0, 85);
+    color: white;
+}
+.wrap-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.wrap-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.content {
+    margin-top: 56px;
+
+}
+
+.test {
+    border: 1px solid red;
+
+}
+
+.main {
+    background-color: rgb(65, 0, 139);
+}
