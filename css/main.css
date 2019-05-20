@@ -17,6 +17,13 @@ nav a {
     font-size: 1.2em;
 }
 
+
+.navbar-collapse {
+    flex-grow: 0;
+    width: 75%;
+    /* border: 1px solid red; */
+}
+
 /* === Image Container === */
 
 .main {
@@ -73,6 +80,7 @@ nav a {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
