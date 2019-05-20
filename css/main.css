@@ -30,13 +30,13 @@ nav a {
     margin-top: 0.5em;
 }
 
-.cat-link {
+.animal-link {
     color: rgba(0, 0, 0, 1);
     font-size: 1.2em;
     margin-right: 1em;
 }
 
-.cat-link:hover {
+.animal-link:hover {
     color: rgba(71, 71, 71, 1);
     text-decoration: none;
 }

@@ -22,12 +22,12 @@ function newCat() {
             // Create link for download
             let aDownload = document.createElement('a');
             $(aDownload).attr('href', prop.file); 
-            $(aDownload).addClass('cat-link');
+            $(aDownload).addClass('animal-link');
             $(aDownload).html('<i class="fas fa-download"></i> Download');
             // Create link for share on FB
             let aFbShare = document.createElement('a');
             $(aFbShare).attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + prop.file); 
-            $(aFbShare).addClass('cat-link');
+            $(aFbShare).addClass('animal-link');
             $(aFbShare).html('<i class="fab fa-facebook-square"></i> Share on FB');
 
             $(divLinks).append(aDownload).append(aFbShare);
