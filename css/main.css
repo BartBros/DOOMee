@@ -1,28 +1,83 @@
 body {
-    background-color: rgb(40, 0, 85);
+    background-color: #DCA026;
     color: white;
 }
-.wrap-75 {
-    width: 75%;
-    margin: 0 auto;
-}
 
-.wrap-50 {
-    width: 50%;
-    margin: 0 auto;
+.bg-my-grey {
+    background-color: rgba(71, 71, 71, 1);
 }
-
 
 .content {
-    margin-top: 56px;
+    margin-top: 104px;
 
 }
 
-.test {
-    border: 1px solid red;
-
+nav a {
+    font-weight: 500;
+    font-size: 1.2em;
 }
+
+/* === Image Container === */
 
 .main {
-    background-color: rgb(65, 0, 139);
+    background-color: rgba(224, 224, 206, 0.5);
+    color: black;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.div-links {
+    margin-top: 0.5em;
+}
+
+.cat-link {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+.cat-link:hover {
+    color: rgba(71, 71, 71, 1);
+    text-decoration: none;
+}
+
+.main i {
+    color: rgba(71, 71, 71, 1);
+}
+
+/* === Media Queries for Bootstrap === */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main {
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .content {
+        width: 75%;
+    }
+
+    .main {
+        padding: 5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main {
+        width: 50%;
+    }
 }
