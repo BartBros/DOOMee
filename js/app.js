@@ -168,8 +168,16 @@ $('nav').on ('click', function(event) {
 
 });
 
-  
-
-
-
+$("#search-form").submit(function(event) {
+    let keyword = $('#search').val(); 
+    event.preventDefault();
+    if (keyword == '') {
+        console.log('empty value');
+    } else if (blacklist.includes(keyword)) {
+        console.log('yes');
+    } else {
+        category = keyword;
+        newImageCategory();
+    }
+});
     

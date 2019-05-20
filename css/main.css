@@ -7,6 +7,17 @@ body {
     background-color: rgba(71, 71, 71, 1);
 }
 
+.popover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.popover-body {
+    color: black;
+}
+.popover-header {
+    background-color: rgba(247, 247, 247, 0.9);
+}
+
 .content {
     margin-top: 104px;
 
