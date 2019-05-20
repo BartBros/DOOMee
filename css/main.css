@@ -37,7 +37,12 @@ nav a {
     margin-top: 0.5em;
 }
 
-.animal-link {
+.div-head {
+    margin-bottom: 0.5em;
+}
+
+.animal-link,
+.flickr-link {
     color: rgba(0, 0, 0, 1);
     font-size: 1.2em;
     margin-right: 1em;
@@ -50,6 +55,10 @@ nav a {
 
 .main i {
     color: rgba(71, 71, 71, 1);
+}
+
+.flickr-image {
+    width: 100%;
 }
 
 /* === Media Queries for Bootstrap === */
