@@ -1,55 +1,119 @@
+/* === Main === */
 body {
-    background-color: #DCA026;
+    background: #dddddd;
     color: white;
 }
 
-.bg-my-grey {
-    background-color: rgba(71, 71, 71, 1);
-}
-
-.popover {
-    color: red;
-    background-color: rgba(255, 255, 255, 0.9);
-}
-.popover-body {
-    color: black;
-}
-.popover-header {
-    background-color: rgba(247, 247, 247, 0.9);
+nav {
+    background: #ffcc32;
 }
 
 .content {
-    margin-top: 104px;
+    background-color: rgba(243,243,243,0.4);
+    background: radial-gradient(rgba(243,243,243,1), transparent);
+}
 
+/* === NAVIGATION === */
+.navbar-collapse {
+    flex-grow: 0;
+    width: 75%;
 }
 
 nav a {
     font-weight: 500;
     font-size: 1.2em;
+    color: #202020;
 }
 
+nav a:hover {
+    color: white;
+}
 
-.navbar-collapse {
-    flex-grow: 0;
-    width: 75%;
-    /* border: 1px solid red; */
+.active a {
+    color: white;
+}
+
+.search-bg {
+    background: white;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+nav form .form-control {
+    border: none;
+}
+nav form .form-control::placeholder {
+    color: #d3d3d3;
+}
+
+nav form .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+nav .btn-outline-warning {
+    color: #202020;
+    border: none;
+}
+
+nav .btn-outline-warning:hover {
+    color: #202020;
+    border: none;
+    background: none;
+}
+
+.navbar-toggler {
+    border: 1px solid #202020;  
+}
+
+.navbar-toggler:focus {
+    outline: none; 
+}
+
+.navbar-toggler i {
+    color: rgba(32, 32, 32, .9);  
+}
+
+.dropdown-menu {
+    background: #ffcc32;
+    border: none;
+}
+
+.dropdown-item:hover {
+    background: #ffcc32; 
+    color: white;
 }
 
 /* === Image Container === */
 
 .main {
-    background-color: rgba(224, 224, 206, 0.5);
+    background-color: #fff;
     color: black;
     padding: 1rem;
     padding-top: 0;
+    border-radius: 10px;
+}
+
+.main:first-of-type {
+    margin-top: 104px;
+  }
+
+.main span {
+    background: transparent;
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+.div-head {
+    background-color: #ededed;
+    border-radius: 5px;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
 }
 
 .div-links {
     margin-top: 0.5em;
-}
-
-.div-head {
-    margin-bottom: 0.5em;
+    
 }
 
 .animal-link,
@@ -57,19 +121,24 @@ nav a {
     color: rgba(0, 0, 0, 1);
     font-size: 1.2em;
     margin-right: 1em;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 0.2em;
+    
 }
 
 .animal-link:hover {
-    color: rgba(71, 71, 71, 1);
+    color: rgb(112, 112, 112);
     text-decoration: none;
 }
 
 .main i {
-    color: rgba(71, 71, 71, 1);
+    color: #202020;
 }
 
 .flickr-image {
     width: 100%;
+    border-radius: 10px;
 }
 
 /* === Media Queries for Bootstrap === */
@@ -100,6 +169,10 @@ nav a {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .dropdown-menu {
+        border: 1px solid rgba(65, 65, 65, 0.8);
+    }
+    
     
 }
 
