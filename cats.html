@@ -13,21 +13,36 @@
     <title>DOOMee</title>
   </head>
   <body>
-    
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-my-grey"> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
-      <div class="collapse navbar-collapse w-75" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
+      <div class="collapse navbar-collapse navbar-links mx-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link open" id="cats" href="index.html">Cats<span class="sr-only">(current)</span></a>
+            <a class="nav-link open" id="funny" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="dogs" href="dogs.html">Dogs</a>
+            <a class="nav-link open" id="meme" href="#">Memes</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link open" id="quote" href="#">Quotes</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                NEAnimals
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cats.html">Cats</a>
+                <a class="dropdown-item" href="dogs.html">Dogs</a>
+              </div>
+            </li>
         </ul>
+        <form id="search-form" class="form-inline my-2 my-lg-0">
+          <input id="search-field" class="form-control mr-sm-2" type="search" placeholder="e.g. &bdquo;monkeys&rdquo;" aria-label="Search" required oninput="checkSearch()">
+          <button id="search-btn" class="btn btn-outline-warning my-2 my-sm-0">Search</button>
+        </form>
       </div>
     </nav>
     <div class="content d-flex flex-column p-2 mx-auto bd-highlight align-items-center">
@@ -42,5 +57,7 @@
 
     <!-- Site JavaScript -->
     <script src="js/cats.js"></script>
+    <script src="js/blacklist.js"></script>
+    <script src="js/NEapp.js"></script>
   </body>
 </html>

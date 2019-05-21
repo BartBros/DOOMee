@@ -1,8 +1,9 @@
 const win = $(window);
 const doc = $(document);
 const url = 'https://random.dog/woof.json';
+let scrollEnabled = true;
 
-function newCat() {
+function newDog() {
     $.getJSON(url, function(data) {
         $(data).each(function (index, prop) {
             if (prop.url.slice(-4) !== '.mp4' && prop.url.slice(-5) !== '.webm') {
@@ -40,13 +41,15 @@ function newCat() {
 };
 
 for (let i = 0; i<10; i++) {
-    newCat();
+    newDog();
 };
 
 $(win).on('scroll', () =>  {
     if (doc.height() - win.height() == win.scrollTop()) {
-        for (let i = 0; i < 3; i++) {
-            newCat();
+        if (scrollEnabled) {
+            for (let i = 0; i < 3; i++) {
+                newDog();
+            }
         }
     }
 });

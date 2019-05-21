@@ -2,6 +2,7 @@ const win = $(window);
 const doc = $(document);
 const url = 'https://aws.random.cat/meow';
 const urlDog = 'https://random.dog/woof.json';
+let scrollEnabled = true;
 
 function newCat() {
     $.getJSON(url, function(data) {
@@ -44,8 +45,10 @@ for (let i = 0; i<10; i++) {
 
 $(win).on('scroll', () =>  {
     if (doc.height() - win.height() == win.scrollTop()) {
-        for (let i = 0; i < 3; i++) {
-            newCat();
+        if (scrollEnabled) {
+            for (let i = 0; i < 3; i++) {
+                newCat();
+            }
         }
     }
 });

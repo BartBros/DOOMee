@@ -1,17 +1,18 @@
 let category = "funny";
-const urlFlickr = 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?';
+const url2 = 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?';
 const options = {
     format: "json",
     tags: "funny"
 };
 
 function newImageCategory() {
+    scrollEnabled = false;
     $('.content').empty();
     let optionsCategory = {
         format: "json",
         tags: category
     };
-    $.getJSON(urlFlickr, optionsCategory, function(data) {
+    $.getJSON(url2, optionsCategory, function(data) {
         $(data.items).each(function (index, val) {
             // ------------------
             // Create MAIN img Div
@@ -69,8 +70,6 @@ function newImageCategory() {
         }); // End Each
     }); // End getJSON
 };
-
-newImageCategory();
 
 // ------------------
 // NAVIGATION
